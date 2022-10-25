@@ -17,7 +17,7 @@ Windows/Unix (Linux e Aplle)
   5. Dar o comando _git add *_ para adiconar todas as mudanças para o modo 'staged' (!!);
   6. Dar o comando _git commit -m "mensagem"_ para commitar as mudanças no repositório local;
   7. Criar um repositório remoto (no GitHub);
-  8. Pegar o HTTPS do repositório e usar ele junto do comando _git remote origin HTTPS_;
+  8. Pegar o HTTPS do repositório e usar ele junto do comando _git remote add origin HTTPS_;
   9. Dar o comando _git push origin master_ para os commits serem "empurrados" para o repositório remoto;
   10. Fim :) 
 
