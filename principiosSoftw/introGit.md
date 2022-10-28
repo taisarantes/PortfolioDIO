@@ -24,5 +24,26 @@ Windows/Unix (Linux e Aplle)
   ### Observações
   (!) - com o _git innit_ uma pasta chamada .git será criada e é importante ressaltar que ela não aparece pois ela sempre é criada nos itens ocultos. Com o comando _ls -a_ é possível listar esses itens pelo terminal.
 
-  (!!) - o modo 'staged' faz parte de um dos ciclos de vida do Git. Ele é o modo em que os arquivos estão no modo espera para serem commitados.
+  (!!) - o modo *'staged'* faz parte de um dos ciclos de vida do Git. Ele é o modo em que os arquivos estão no modo espera para serem commitados.
+
+  ### Ciclo de vida dos arquivos no Git
+ Primeiros estágios dos arquivos:
+  - O arquivo é criado e em seguida o usuário dá o comando _git innit_;
+ Quando um arquivo é criado, ele está no *estado untracked* (estágio do git init), ou seja, o git não reconhece esse arquivo e não sabe para que usá-lo. Quando o comando _git add_ é utilizado, o arquivo passa direto para o estado *staged*, onde ele está esperando para ser commitado.
+
+ Segundos estágios:
+  - Quando o arquivo é criado, dado o comando git innit e ele ainda não foi modificado;
+ Um arquivo no estado *unmodified* significa que é um arquivo que o git reconhece, mas ele não foi modificado ainda. Quando o arquivo é aberto e modificado, ele muda diretamente para modified.
+
+ Obs: Quando um arquivo unmodified é removido, o Git para de reconhecer ele e ele volta pra untracked.
+
+ Terceiro estágio:
+  - Logo depois que o arquivo é modificado;
+ Depois, no estado *modified* ele passa direto para o *staged*, onde ele vai ficar no modo espera para ser modificado ou commitado.
+
+ Últimos estágio:
+  - O arquivo foi modificado e o commit foi dado o commit;
+ No *staged* o arquivo está esperando para se tornar um commit e quando o commit é criado, todas as alterações dos estágios acima são envelopadas e ele volta para o *unmodified*, esperando novas modificações para reiniciar o ciclo.
+
+
   
