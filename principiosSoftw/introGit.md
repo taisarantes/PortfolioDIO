@@ -18,7 +18,7 @@ Windows/Unix (Linux e Aplle)
   6. Dar o comando _git commit -m "mensagem"_ para commitar as mudanças no repositório local;
   7. Criar um repositório remoto (no GitHub);
   8. Pegar o HTTPS do repositório e usar ele junto do comando _git remote add origin HTTPS_;
-  9. Dar o comando _git push origin master_ para os commits serem "empurrados" para o repositório remoto;
+  9. Dar o comando _git push origin master_ para os commits serem "empurrados" para o repositório remoto (!!!);
   10. Fim :) 
 
   ### Observações
@@ -26,24 +26,33 @@ Windows/Unix (Linux e Aplle)
 
   (!!) - o modo *'staged'* faz parte de um dos ciclos de vida do Git. Ele é o modo em que os arquivos estão no modo espera para serem commitados.
 
+  (!!!) - é preciso criar uma chave SSH e ter uma senha para realizar a parte do push.
+
+  ### Commits e pushs
+  Sempre que modificar um arquivo é preciso repetir os passos 4, 5, 6 e 9, exatamente nessa ordem, para que as modifcações sejam atualizadas tanto no repositório local quanto no remoto.
+
   ### Ciclo de vida dos arquivos no Git
- Primeiros estágios dos arquivos:
-  - O arquivo é criado e em seguida o usuário dá o comando _git innit_;
- Quando um arquivo é criado, ele está no *estado untracked* (estágio do git init), ou seja, o git não reconhece esse arquivo e não sabe para que usá-lo. Quando o comando _git add_ é utilizado, o arquivo passa direto para o estado *staged*, onde ele está esperando para ser commitado.
+   - Primeiros estágios dos arquivos:
+  O arquivo é criado e em seguida o usuário dá o comando _git innit_;
+ 
+  Quando um arquivo é criado, ele está no *estado untracked* (estágio do git init), ou seja, o git não reconhece esse arquivo e não sabe para que usá-lo. Quando o comando _git add_ é utilizado, o arquivo passa direto para o estado *staged*, onde ele está esperando para ser commitado.
 
- Segundos estágios:
-  - Quando o arquivo é criado, dado o comando git innit e ele ainda não foi modificado;
- Um arquivo no estado *unmodified* significa que é um arquivo que o git reconhece, mas ele não foi modificado ainda. Quando o arquivo é aberto e modificado, ele muda diretamente para modified.
+   - Segundos estágios:
+  Quando o arquivo é criado, dado o comando git innit e ele ainda não foi modificado;
+ 
+  Um arquivo no estado *unmodified* significa que é um arquivo que o git reconhece, mas ele não foi modificado ainda. Quando o arquivo é aberto e modificado, ele muda diretamente para modified.
 
- Obs: Quando um arquivo unmodified é removido, o Git para de reconhecer ele e ele volta pra untracked.
+  Obs: Quando um arquivo unmodified é removido, o Git para de reconhecer ele e ele volta pra untracked.
 
- Terceiro estágio:
-  - Logo depois que o arquivo é modificado;
- Depois, no estado *modified* ele passa direto para o *staged*, onde ele vai ficar no modo espera para ser modificado ou commitado.
+   - Terceiro estágio:
+  Logo depois que o arquivo é modificado;
+ 
+  Depois, no estado *modified* ele passa direto para o *staged*, onde ele vai ficar no modo espera para ser modificado ou commitado.
 
- Últimos estágio:
-  - O arquivo foi modificado e o commit foi dado o commit;
- No *staged* o arquivo está esperando para se tornar um commit e quando o commit é criado, todas as alterações dos estágios acima são envelopadas e ele volta para o *unmodified*, esperando novas modificações para reiniciar o ciclo.
+   - Últimos estágios:
+  O arquivo foi modificado e o commit foi dado o commit;
+ 
+  No *staged* o arquivo está esperando para se tornar um commit e quando o commit é criado, todas as alterações dos estágios acima são envelopadas e ele volta para o *unmodified*, esperando novas modificações para reiniciar o ciclo.
 
 
   
