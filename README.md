@@ -6,4 +6,5 @@ Cada curso está armazenado dentro de uma pasta, onde você encontrará seus con
 
 ##
 ### Conteúdos
- - principiosSoftw: introdução à computação e ao Git
+ - principiosSoftw: introdução à computação e ao Git;
+ - desenvolvimentoJava: exercícios e conteúdos das aulas de desenvolvimento Java
