@@ -16,7 +16,9 @@ public class DoWhile {
         System.out.println("Atendeu? " + atendeu);
 
         return ! atendeu;
+        //return new Random().nextInt(3)!=1;
         //negando o ato de continuar tocando
         //se ele atendeu, ele para de tocar, por isso o !
     }
 }
+
