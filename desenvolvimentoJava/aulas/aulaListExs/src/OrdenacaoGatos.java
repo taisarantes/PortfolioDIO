@@ -10,7 +10,7 @@ import java.util.*;
         gato 1 - nome: Simba, idade: 12 (meses), cor: amarelo
          */
 
-public class Gatos {
+public class OrdenacaoGatos {
     public static void main(String[] args) {
         //quinto passo: criar a List
         List<Gato> meusGatos = new ArrayList<>(){{

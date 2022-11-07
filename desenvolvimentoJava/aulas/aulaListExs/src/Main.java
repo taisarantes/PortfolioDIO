@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        //Dada uma lista com 7 notas de u, aluno, faça:
+        //Dada uma lista com 7 notas de um aluno, faça:
 
         System.out.println("Crie uma lista e adicione as sete notas: ");
         //criar lista:
